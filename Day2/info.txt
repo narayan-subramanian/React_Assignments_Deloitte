@@ -1,1 +1,10 @@
 
+A "key" is a specific attribute you must include when creating lists of elements in React. Keys play a crucial role in React as they help identify which items in a list have been changed, updated, or deleted.
+
+Keys are essential for providing a unique identity to elements within lists. It's best practice to use a string as a key that uniquely identifies each item in the list.
+
+
+
+
+
+
