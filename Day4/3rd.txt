@@ -1,1 +1,22 @@
+const axios = require('axios');
 
+// Set username and password
+const username = 'user';
+const password = 'pass';
+
+// Encode username and password in base64
+const encoded = Buffer.from(username + ':' + password).toString('base64');
+
+axios.get('https://example.com/api', {
+    headers: {
+      'Authorization': 'Basic ' + encoded
+    }
+  })
+  .then(response => {
+    // Handle success
+    console.log(response.data);
+  })
+  .catch(error => {
+    // Handle error
+    console.error(error);
+  });
